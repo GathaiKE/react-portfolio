@@ -1,6 +1,7 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom"
 import Home from "./pages/home"
 import MainLayout from "./components/layouts/mainLayout"
+import './App.css'
 
 const routes = (
   <Route element={<MainLayout />}>
