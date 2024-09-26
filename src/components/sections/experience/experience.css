@@ -1,0 +1,48 @@
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75em;
+    justify-content: center;
+    align-items: center;
+    margin: 10em 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 1px;
+    background-color: #fff;
+    height: 6em;
+}
+
+.circle{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.card-boundary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-card>p {
+    color: #ACACAC;
+}

@@ -1,0 +1,24 @@
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.75em;
+    margin: 8em 4em;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.projects-section>small{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: .3em;
+}
+
+.projects-section>small:active{
+    color: #ACACACAC;
+}

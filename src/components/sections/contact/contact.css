@@ -1,0 +1,60 @@
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8em 4em;
+    gap: 3em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.form>button{
+    width: 10em;
+    padding: .5em;
+    background-color: white;
+    color: black;
+    border: white 1px solid;
+    margin-left: 8em;
+}
+
+.form>div>label {
+    display: flex;
+    align-items: start;
+    gap: 2em;
+}
+
+.form>div>label>textarea {
+    resize: none;
+    overflow: auto;
+    height: 15em;
+}
+
+.form>div>label>input, .form>div>label>textarea {
+    width: 40em;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: start;
+    width: 100%;
+}
+
+.contact-apps{
+    display: flex;
+    gap: 1em;
+}
+
+.contact-apps>img{
+    height: 30px;
+    cursor: pointer;
+}

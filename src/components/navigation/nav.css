@@ -1,7 +1,7 @@
 .home-nav {
     display: flex;
     width: fit-content;
-    /* gap: 1.5em; */
+    z-index: 3;
     position: fixed;
     padding: 0 30px;
     border-radius: 50px;

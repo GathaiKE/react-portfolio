@@ -3,6 +3,8 @@
     width: 100%;
     justify-content: space-evenly;
     margin: 4em 0;
+    animation: 30s slide infinite linear;
+    position: relative;
 }
 
 .skills-section>div{
@@ -14,4 +16,18 @@
 
 .skills-section>div>label{
     text-align: center;
+}
+
+.skills-section:hover{
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from {
+        transform: translatex(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
