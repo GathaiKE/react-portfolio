@@ -1,16 +1,25 @@
 .home-nav {
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: fit-content;
+    /* gap: 1.5em; */
     position: fixed;
+    padding: 0 30px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 2em;
 }
 
 .home-nav--link{
-    border: 1px solid red;
-    padding: .9em 1.75em;
+    padding: .5em 1.5em;
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.home-nav--link:hover{
+    cursor: pointer;
+    color: #FD8A37;
 }
 
 .home-nav--link-active{
-    color: #D5B07C;
-    border-bottom: #D5B07C solid 2px;
+    color: #FD8A37;
+    border-bottom: #FD8A37 solid 3px;
 }
