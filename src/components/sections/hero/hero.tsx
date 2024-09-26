@@ -19,7 +19,10 @@ const Hero=()=>{
                 <div className='hero-content'>
                     <span>
                         <h1>Hi,</h1>
-                        <h1 >I am <span className={showName?"fade":"fade fade-out"}>{showName?"Brian Gathai.":"a software developer."}</span></h1>
+                        <h1 >I am 
+                            <span className={showName?"fade-in":"fade-out"}>{showName?" Brian Gathai.":" a software developer."}
+                            </span>
+                        </h1>
                     </span>
                     <span className='pitch-section'>
                         <p>Looking to turn the lights on in your world, you're in the right place. Talk to me and lets make magic together.</p>

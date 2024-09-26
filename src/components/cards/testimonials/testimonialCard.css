@@ -1,0 +1,25 @@
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 20em;
+    height: 20em;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.testimonial-names {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.testimonial-names>h3, .testimonial-names>small {
+    text-align: center;
+}
+
+.testimonial-names>small {
+    color: #ACACAC;
+}

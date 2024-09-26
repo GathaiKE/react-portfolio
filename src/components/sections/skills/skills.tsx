@@ -12,7 +12,7 @@ import { Skill } from "../../../interfaces/interfaces";
 // import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const images: Skill[] = [
+const imagesArray: Skill[] = [
     {
         name: "Figma",
         src: figmaImg,
@@ -61,27 +61,9 @@ const images: Skill[] = [
         color: "#00758F",
         bgColor: "rgba(0, 117, 143, 0.1)",
     },
-];
+]
 
-// const responsive = {
-//     superLargeDesktop: {
-//         breakpoint: { max: 4000, min: 3000 },
-//         items: 5,
-//     },
-//     desktop: {
-//         breakpoint: { max: 3000, min: 1024 },
-//         items: 3,
-//     },
-//     tablet: {
-//         breakpoint: { max: 1024, min: 464 },
-//         items: 2,
-//     },
-//     mobile: {
-//         breakpoint: { max: 464, min: 0 },
-//         items: 1,
-//     },
-// };
-
+const images:Skill[] = [...imagesArray, ...imagesArray, ...imagesArray]
 
 const Skills: React.FC = () => {
     const [hoverIndex, setHoverIndex] = useState<number | null>(null);
