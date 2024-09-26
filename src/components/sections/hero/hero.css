@@ -1,0 +1,75 @@
+.hero--container {
+    display: flex;
+    height: 100%;
+}
+
+.hero-content{
+    width: 60%;
+    padding: 0 4em;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    gap: 2em;
+}
+
+.hero-content>span>h1{
+    font-size: 3.625em;
+}
+
+.pitch-section>p{
+    font-size: 1.425em;
+    color: #ACACAC;
+    line-height: 1.5em;
+}
+
+/* .fade {
+    transition: opacity .5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity .5s ease-in-out
+} */
+
+
+.buttons-container>button{
+    font-size: 1.275em;
+}
+
+.buttons-container{
+    width: 100%;
+    display: flex;
+    gap: .9em;
+}
+
+.pitch-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+}
+
+.contact-btn{
+    color: #FD8A37;
+}
+
+.explore-btn{
+    color: black;
+    background-color: #FD8A37;
+}
+
+.explore-btn:active, .contact-btn:active{
+    background-color: #FD8A374f;
+    color: #FD8A37;
+}
+
+.hero-img{
+    width: 40%;
+}
+
+.hero-img>img{
+    height: 100%;
+    width: 100%;
+}

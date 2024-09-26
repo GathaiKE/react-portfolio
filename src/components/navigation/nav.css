@@ -1,0 +1,25 @@
+.home-nav {
+    display: flex;
+    width: fit-content;
+    /* gap: 1.5em; */
+    position: fixed;
+    padding: 0 30px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 2em;
+}
+
+.home-nav--link{
+    padding: .5em 1.5em;
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.home-nav--link:hover{
+    cursor: pointer;
+    color: #FD8A37;
+}
+
+.home-nav--link-active{
+    color: #FD8A37;
+    border-bottom: #FD8A37 solid 3px;
+}
