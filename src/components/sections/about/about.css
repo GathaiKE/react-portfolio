@@ -14,3 +14,9 @@
     gap: 1.75em;
 }
 
+@media (min-width:768px) and (max-width:1024px) {
+    .about-section{
+        
+    padding: 0 2em 4em 2em;
+    }
+}

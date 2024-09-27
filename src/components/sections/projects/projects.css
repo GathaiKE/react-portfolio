@@ -22,3 +22,14 @@
 .projects-section>small:active{
     color: #ACACACAC;
 }
+
+@media (min-width: 768px) and (max-width:1024px){
+
+    .projects-section{
+        margin: 8em 2em;
+    }
+
+    .project-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
