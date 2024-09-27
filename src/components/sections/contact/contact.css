@@ -58,3 +58,9 @@
     height: 30px;
     cursor: pointer;
 }
+
+@media (min-width:768px) and (max-width:1024px) {
+    .contact-section{
+        margin: 5em 2em;
+    }
+}

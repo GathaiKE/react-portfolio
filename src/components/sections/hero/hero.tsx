@@ -18,8 +18,8 @@ const Hero=()=>{
         <section className='hero--container'>
                 <div className='hero-content'>
                     <span>
-                        <h1>Hi,</h1>
-                        <h1 >I am 
+                        <h1 className='heading-container'>Hi,</h1>
+                        <h1 className='heading-container'>I am 
                             <span className={showName?"fade-in":"fade-out"}>{showName?" Brian Gathai.":" a software developer."}
                             </span>
                         </h1>

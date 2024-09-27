@@ -63,7 +63,7 @@ const imagesArray: Skill[] = [
     },
 ]
 
-const images:Skill[] = [...imagesArray, ...imagesArray, ...imagesArray]
+const images:Skill[] = [...imagesArray]
 
 const Skills: React.FC = () => {
     const [hoverIndex, setHoverIndex] = useState<number | null>(null);
@@ -87,7 +87,7 @@ const Skills: React.FC = () => {
                 onMouseLeave={() => setHoverIndex(null)}
             >
                 
-                <img src={image.src} alt={image.name} style={imageStyles} />
+                <img src={image.src} alt={image.name} style={imageStyles} className="skill-image"/>
                 <label style={labelStyles}>{image.name}</label>
                 
             </div>

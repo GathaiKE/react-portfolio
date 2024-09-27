@@ -2,8 +2,8 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    margin: 4em 0;
-    animation: 30s slide infinite linear;
+    /* margin: 2em 0; */
+    /* animation: 30s slide infinite linear; */
     position: relative;
 }
 
@@ -18,8 +18,11 @@
     text-align: center;
 }
 
-.skills-section:hover{
-    animation-play-state: paused;
+
+.skill-image{
+    width:  70px;
+    height: 70px;
+    object-fit: contain;
 }
 
 @keyframes slide {
@@ -30,4 +33,15 @@
     to {
         transform: translateX(-100%);
     }
+}
+
+@media (max-width:767px){
+    .skills-section{
+        animation: 30s slide infinite linear;
+        position: relative;
+    }
+    
+.skills-section:hover{
+    animation-play-state: paused;
+}
 }
