@@ -1,8 +1,9 @@
 .testimonial-card {
     display: flex;
     flex-direction: column;
+    font-size: small;
     gap: 2em;
-    width: 20em;
+    width:  20em;
     height: 20em;
     border: 1px solid white;
     justify-content: center;

@@ -43,3 +43,7 @@ export interface Socials {
     icon:string 
     name:string
 }
+
+export interface SliderProps {
+    testimonials:Testimonial[]
+}
