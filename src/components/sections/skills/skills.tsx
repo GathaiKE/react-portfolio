@@ -63,7 +63,7 @@ const imagesArray: Skill[] = [
     },
 ]
 
-const images:Skill[] = [...imagesArray]
+const images:Skill[] = [...imagesArray, ...imagesArray,...imagesArray,...imagesArray]
 
 const Skills: React.FC = () => {
     const [hoverIndex, setHoverIndex] = useState<number | null>(null);

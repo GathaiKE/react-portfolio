@@ -23,7 +23,7 @@
     color: #ACACACAC;
 }
 
-@media (min-width: 768px) and (max-width:1024px){
+@media (min-width: 769px) and (max-width:1024px){
 
     .projects-section{
         margin: 8em 2em;
@@ -31,5 +31,17 @@
 
     .project-cards{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 0) and (max-width:768){
+
+    .projects-section{
+        margin: 4em 1em;
+    }
+
+    .project-cards{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
