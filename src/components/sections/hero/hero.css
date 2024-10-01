@@ -11,12 +11,59 @@
     height: 100vh;
     justify-content: center;
     gap: 2em;
+    overflow-x: hidden;
 }
 
-.hero-content>span>h1 {
-    font-size: 3.625em;
+.heading-container{
+    display: inline-flex;
+    font-size: 3em;
 }
 
+.heading-container .dynamic-text {
+    margin-left: .3em;
+    height: 1.1em;
+    line-height: 1.2em;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.dynamic-text li{
+    list-style: none;
+    font-weight: 600;
+    top: 0;
+    position: relative;
+    animation:  switch 6s steps(2) infinite;
+}
+
+@keyframes switch{
+    100%{
+        top: -2.5em;
+    }
+}
+
+.dynamic-text li span{
+    position: relative;
+    color: #FD8A37;
+}
+
+.dynamic-text li span:after {
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: .1em solid #FD8A37;
+    left: 0;
+    background:  rgba(0,0,0,1);
+    animation: typewriter 3s steps(21) infinite;
+}
+
+
+@keyframes typewriter{
+    100%{
+        left: 100%;
+        margin: 0 -25px 0 25px  ;
+    }
+}
 .pitch-section>p {
     font-size: 1.425em;
     color: #ACACAC;

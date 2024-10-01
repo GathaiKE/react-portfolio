@@ -3,7 +3,7 @@
     width: 100%;
     justify-content: space-evenly;
     /* margin: 2em 0; */
-    /* animation: 30s slide infinite linear; */
+    animation: 10s slide infinite linear;
     position: relative;
 }
 
@@ -37,7 +37,7 @@
 
 @media (max-width:767px){
     .skills-section{
-        animation: 30s slide infinite linear;
+        animation: 30s alternate infinite slide;
         position: relative;
     }
     

@@ -1,10 +1,11 @@
 .testimonial-section {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: 4em;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin: 0 2em;
+    padding: 1em 0;
 }
 
 .testimonial-cards {
@@ -18,4 +19,9 @@
     align-items: center;
     width: fit-content;
     padding: .1em 0;
+}
+
+.slider-container{
+    width: 80%;
+    margin: 0 auto;
 }
