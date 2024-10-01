@@ -12,13 +12,15 @@
   "dependencies": {
     "@types/react-slick": "^0.23.13",
     "@types/slick-carousel": "^1.6.40",
+    "@types/swiper": "^5.4.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-multi-carousel": "^2.8.5",
     "react-router-dom": "^6.26.2",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
