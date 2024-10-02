@@ -1,9 +1,8 @@
 .skills-section{
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-evenly;
-    /* margin: 2em 0; */
-    animation: 10s slide infinite linear;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -35,13 +34,9 @@
     }
 }
 
-@media (max-width:767px){
+@media (max-width:768px){
     .skills-section{
-        animation: 30s alternate infinite slide;
-        position: relative;
+        width: 100%;
     }
     
-.skills-section:hover{
-    animation-play-state: paused;
-}
 }

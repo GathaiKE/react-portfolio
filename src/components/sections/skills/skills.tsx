@@ -12,7 +12,7 @@ import { Skill } from "../../../interfaces/interfaces";
 // import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const imagesArray: Skill[] = [
+const images: Skill[] = [
     {
         name: "Figma",
         src: figmaImg,
@@ -63,7 +63,7 @@ const imagesArray: Skill[] = [
     },
 ]
 
-const images:Skill[] = [...imagesArray, ...imagesArray,...imagesArray,...imagesArray]
+// const imagesArray:Skill[] = [...imagesArray, ...imagesArray,...imagesArray,...imagesArray]
 
 const Skills: React.FC = () => {
     const [hoverIndex, setHoverIndex] = useState<number | null>(null);

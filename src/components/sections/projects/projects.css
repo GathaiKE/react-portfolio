@@ -23,7 +23,7 @@
     color: #ACACACAC;
 }
 
-@media (min-width: 769px) and (max-width:1024px){
+@media (min-width: 768px) and (max-width:1024px){
 
     .projects-section{
         margin: 8em 2em;
@@ -35,7 +35,7 @@
 }
 
 
-@media (min-width: 0) and (max-width:768){
+@media(max-width:767px){
 
     .projects-section{
         margin: 4em 1em;

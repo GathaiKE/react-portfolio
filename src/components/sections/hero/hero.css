@@ -15,59 +15,66 @@
 }
 
 .heading-container{
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-text {
     font-size: 3em;
 }
 
+.career-text {
+    font-size: 1.435em;
+}
+
 .heading-container .dynamic-text {
-    margin-left: .3em;
+    /* margin-left: .3em; */
     height: 1.1em;
     line-height: 1.2em;
     overflow: hidden;
     /* border: 1px solid red; */
 }
 
-.dynamic-text li{
+.name-text .dynamic-text {
     list-style: none;
     font-weight: 600;
     top: 0;
-    position: relative;
-    animation:  switch 6s steps(2) infinite;
-}
-
-@keyframes switch{
-    100%{
-        top: -2.5em;
-    }
-}
-
-.dynamic-text li span{
-    position: relative;
     color: #FD8A37;
+    position: relative;
 }
 
-.dynamic-text li span:after {
-    content:"";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-left: .1em solid #FD8A37;
-    left: 0;
-    background:  rgba(0,0,0,1);
-    animation: typewriter 3s steps(21) infinite;
-}
-
-
-@keyframes typewriter{
-    100%{
-        left: 100%;
-        margin: 0 -25px 0 25px  ;
-    }
-}
 .pitch-section>p {
     font-size: 1.425em;
     color: #ACACAC;
     line-height: 1.5em;
+}
+
+.pitch-logos {
+    display: flex;
+    width: fit-content;
+    gap: 1em;
+    margin-left: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.pitch-logos img{
+    width:  1.7em;
+    height: 1.7em;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.pitch-logos img:hover::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    z-index: 3;
 }
 
 .buttons-container>button {
@@ -111,7 +118,7 @@
 }
 
 
-@media  (min-width: 768px) and (max-width: 1024px) {
+@media  (min-width: 769px) and (max-width: 1024px) {
     .hero--container {
         background: url(../../../assets/hero.png);
         background-repeat: no-repeat;
@@ -141,6 +148,55 @@
     .pitch-section--intro {
         font-size: 4em;
 
+    }
+
+    .heading-container{
+        width: fit-content;
+    }
+    .hero-img {
+        display: none;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero--container {
+        background: url(../../../assets/hero.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+
+    .hero-content{
+        background: rgba(0,0,0,.6);
+    }
+
+    .hero-content>span,
+    .pitch-section>p,
+    .heading-container,
+    .buttons-container,
+    .heading-container>span
+    {
+        background: rgba(0,0,0,.0);
+    }
+
+    .hero-content {
+        margin: 10em 0;
+        height: fit-content;
+    }
+    
+    
+    .pitch-section>p {
+        font-size: 1em;
+        color: #ACACAC;
+        line-height: 1.5em;
+    }
+
+    .buttons-container>button {
+        font-size: .9em;
     }
 
     .heading-container{
