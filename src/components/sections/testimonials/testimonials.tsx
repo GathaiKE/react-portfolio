@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import { Pagination } from "swiper/modules";
 
 const Testimonials: React.FC = () => {
     const cards: JSX.Element[] = testimonials.map((testimonial) => {
@@ -19,7 +20,11 @@ const Testimonials: React.FC = () => {
             <h2>Kind Words said to me before</h2>
             <div className="testimonial-cards slider-container">
                 <Swiper
+                    modules={[Pagination]}
                     slidesPerView={3}
+                    pagination={{
+                        el: '.swiper-pagination',clickable:true
+                    }}
                     breakpoints={{
                         1024:{
                             slidesPerView:3
@@ -27,12 +32,13 @@ const Testimonials: React.FC = () => {
                         768:{
                             slidesPerView:2
                         },
-                        435:{
+                        0:{
                             slidesPerView:1
                         }
                     }}
                 >
                     {cards}
+                    <div className="swiper-pagination"></div>
                 </Swiper>
             </div>
         </section>

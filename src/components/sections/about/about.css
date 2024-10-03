@@ -20,3 +20,11 @@
     padding: 0 2em 4em 2em;
     }
 }
+
+
+@media (max-width:768px){
+    .about-section{
+        padding: 4em 1em;
+    }
+}
+

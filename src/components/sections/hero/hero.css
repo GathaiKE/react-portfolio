@@ -25,15 +25,9 @@
 
 .career-text {
     font-size: 1.435em;
+    gap: .2em;
 }
 
-.heading-container .dynamic-text {
-    /* margin-left: .3em; */
-    height: 1.1em;
-    line-height: 1.2em;
-    overflow: hidden;
-    /* border: 1px solid red; */
-}
 
 .name-text .dynamic-text {
     list-style: none;
@@ -118,7 +112,7 @@
 }
 
 
-@media  (min-width: 769px) and (max-width: 1024px) {
+@media  (min-width: 768px) and (max-width: 1024px) {
     .hero--container {
         background: url(../../../assets/hero.png);
         background-repeat: no-repeat;
@@ -162,12 +156,12 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hero--container {
         background: url(../../../assets/hero.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: right;
+        background-position: center;
     }
 
     .hero-content{
@@ -184,15 +178,40 @@
     }
 
     .hero-content {
-        margin: 10em 0;
+        margin: 5em 0 2em 0;
         height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name-text {
+        font-size: 2em;
+    }
+
+    .career-text {
+        font-size: 1.3em;
+        justify-content: center;
+        display: flex;
     }
     
-    
+    .pitch-section {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .pitch-section>p {
         font-size: 1em;
         color: #ACACAC;
         line-height: 1.5em;
+    }
+    
+    .buttons-container {
+        justify-content: center;
     }
 
     .buttons-container>button {
@@ -201,6 +220,7 @@
 
     .heading-container{
         width: fit-content;
+        gap: .4em;
     }
     .hero-img {
         display: none;
@@ -208,5 +228,6 @@
 
     .hero-content {
         width: 100%;
+        padding: 1em;
     }
 }

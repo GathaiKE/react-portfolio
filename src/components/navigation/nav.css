@@ -43,8 +43,8 @@
         padding: 10px 30px;
         border-radius: 50px;
         background: rgba(0, 0, 0, 0.7);
-        bottom: 0;
-        margin-bottom: 3.2em;
+        /* bottom: 0; */
+        margin-top: 2em;
     }
 
     .mobile-nav .home-nav--link img {

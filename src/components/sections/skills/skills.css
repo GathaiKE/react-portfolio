@@ -34,9 +34,17 @@
     }
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
     .skills-section{
         width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: .3em;
+    }
+    
+    .skill-card {
+        align-items: center;
+        justify-content: center;
     }
     
 }

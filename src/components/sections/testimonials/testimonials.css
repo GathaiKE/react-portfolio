@@ -4,25 +4,36 @@
     gap: 3em;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
+    margin-bottom: 20px;
 }
 
 .swiper {
     width: 95vw;
     display: flex;
     justify-content: center;
-
+    position: relative;
 }
 
 .swiper-slide {
     display: flex;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
-@media (min-width:768) and (max-width: 1024){
-    .swiper {
-        /* width: 100vw; */
-        border: 2px solid red;
-    }
+.swiper-pagination {
+    position:absolute;
+    background-color: rgba(0,0,0,.0);
+    bottom: 0px !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #fff !important; 
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FD8A37 !important; 
+    width: 20px !important;
+    height: 10px !important;
+    border-radius: 20px !important;
 }
