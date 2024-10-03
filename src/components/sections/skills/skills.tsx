@@ -85,6 +85,7 @@ const Skills: React.FC = () => {
                 key={index}
                 onMouseEnter={() => setHoverIndex(index)}
                 onMouseLeave={() => setHoverIndex(null)}
+                className="skill-card"
             >
                 
                 <img src={image.src} alt={image.name} style={imageStyles} className="skill-image"/>

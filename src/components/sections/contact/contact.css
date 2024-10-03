@@ -36,7 +36,7 @@
 
 .form>div>label>input, .form>div>label>textarea {
     width: 40em;
-    padding: 1em;
+    padding: 1em 2px;
     border: 1px solid white;
     border-radius: 10px;
 }
@@ -62,5 +62,32 @@
 @media (min-width:768px) and (max-width:1024px) {
     .contact-section{
         margin: 5em 2em;
+    }
+}
+
+@media (max-width:767px) {
+
+    .contact-section{
+        margin: 0em 1em;
+    }
+
+    .form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form>div>label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form>div>label>input, .form>div>label>textarea {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    .form>button{
+        margin-left: 0;
     }
 }

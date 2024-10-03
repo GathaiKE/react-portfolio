@@ -11,7 +11,7 @@ const Hero=()=>{
                         <span className='heading-container'>
                             <span className='name-text'><span className='static-text'>Hi, I am </span><span className='dynamic-text'>Brian Gathai.</span>
                             </span>
-                            <span className='career-text'><span className='static-text'>I'm a </span><span className='dynamic-text'>Software Developer.</span>
+                            <span className='career-text'><span className='static-text'>I'm a </span><span className='dynamic-text'> Software Developer.</span>
                             </span>
                         </span>
                     </span>
@@ -23,7 +23,7 @@ const Hero=()=>{
                         </span>
                         <span className='buttons-container'>
                             <button className='explore-btn'>Explore</button>
-                            <button className='contact-btn'>Contact Me</button>
+                            <button className='contact-btn'>Contact</button>
                         </span>
                     </span>
                 </div>
