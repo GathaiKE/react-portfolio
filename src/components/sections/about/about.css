@@ -26,5 +26,9 @@
     .about-section{
         padding: 4em 1em;
     }
+
+    .about-section>p{
+        font-size: medium;
+    }
 }
 
