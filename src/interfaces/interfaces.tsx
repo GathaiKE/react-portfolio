@@ -42,6 +42,11 @@ export interface Socials {
     id:string
     icon:string 
     name:string
+    address:string
+}
+
+export interface SocialsBtnProps {
+    social:Socials
 }
 
 export interface SliderProps {

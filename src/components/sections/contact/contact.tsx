@@ -3,6 +3,7 @@ import './contact.css'
 import { socialApps } from '../../../data'
 import { useEffect, useState } from 'react'
 import { Socials } from '../../../interfaces/interfaces'
+import SocialsBtn from '../../socialsBtn/socialsBtn'
 
 
 const Contact:React.FC = ()=>{
@@ -12,7 +13,7 @@ const Contact:React.FC = ()=>{
     useEffect(()=>setSocials(socialApps), [])
 
     const contactApps:React.JSX.Element[] = socials.map(app=>{
-        return <img src={app.icon} alt={app.name} key={app.id} />
+        return <SocialsBtn social={app} key={app.id} />
     })
     return (
         <section className='contact-section'>
