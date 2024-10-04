@@ -27,7 +27,7 @@
         padding: 4em 1em;
     }
 
-    .about-section>p{
+    .about-section>p>span{
         font-size: medium;
     }
 }

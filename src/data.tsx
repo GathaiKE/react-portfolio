@@ -83,9 +83,9 @@ import linkedin from './assets/logos/linkedin.png'
     ]
 
     const socialApps: Socials[] = [
-        {id:"1", icon:whatsapp, name:"Whatsapp"},
-        {id:"2", icon:linkedin, name:"LinkedIn"},
-        {id:"3", icon:gmail, name:"Gmail"},
+        {id:"1", icon:whatsapp, name:"whatsapp", address:`https://wa.me/+254712166018`},
+        {id:"2", icon:linkedin, name:"linkedin", address:'https://www.linkedin.com/in/gathai-kariuki-061234228/'},
+        {id:"3", icon:gmail, name:"gmail",address:"https://mail.google.com/mail/?view=cm&to=gathaikariuki@gmail.com"},
     ]
 
     export {
