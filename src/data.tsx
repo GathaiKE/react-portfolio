@@ -88,8 +88,16 @@ import linkedin from './assets/logos/linkedin.png'
         {id:"3", icon:gmail, name:"gmail",address:"https://mail.google.com/mail/?view=cm&to=gathaikariuki@gmail.com"},
     ]
 
+    const environment = {
+        production:true,
+        SERVICE_ID :'service_9mpn0zc',
+        TEMPLATE_ID:'template_0g4f3j7',
+        USER_ID:'NCARLvOpKkomfTivn'
+    }
+
     export {
         projectImages,
         testimonials,
-        socialApps
+        socialApps,
+        environment
     }

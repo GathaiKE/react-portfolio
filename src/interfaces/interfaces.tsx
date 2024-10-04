@@ -52,3 +52,11 @@ export interface SocialsBtnProps {
 export interface SliderProps {
     testimonials:Testimonial[]
 }
+
+
+export interface EmailJsResponse {
+    error?:unknown
+    status: number
+    statusText:string
+    message:string
+}

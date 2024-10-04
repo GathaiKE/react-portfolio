@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 8em 4em;
+    margin: 2em 4em;
     gap: 3em;
 }
 
@@ -13,6 +13,27 @@
     gap: 2em;
 }
 
+.form small{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.success{
+    color: rgb(11, 167, 11);
+}
+
+.fail{
+    color: rgb(255, 0, 0);
+}
+
+.form small img{
+    width:  18px;
+    height: 18px;
+}
+
 .form>button{
     width: 10em;
     padding: .5em;
@@ -20,6 +41,40 @@
     color: black;
     border: white 1px solid;
     margin-left: 8em;
+}
+
+.ellipsis-container {
+    background: rgba(0,0,0,.0);
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.ellipsis {
+    background: #000000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: 1.5s infinite ease-in-out loading;
+}
+
+.ellipsis:nth-child(1){
+    animation-delay: .32s;
+}
+
+.ellipsis:nth-child(2){
+    animation-delay: .16s;
+}
+
+
+@keyframes loading {
+    0%, 80%, 100%{
+        transform: scale(0);
+    }
+
+    40%{
+        transform: scale(1);
+    }
 }
 
 .form>div>label {
