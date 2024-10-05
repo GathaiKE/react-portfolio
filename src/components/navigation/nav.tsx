@@ -7,7 +7,6 @@ const [openMenu, setOpenMenu] = useState(false)
 
     const toggleMenu=()=>{
         setOpenMenu(val=>!val)
-        console.log(openMenu)
     }
 
     return (
@@ -22,12 +21,12 @@ const [openMenu, setOpenMenu] = useState(false)
             </nav>
 
             <nav className='mobile-nav'>
-                <div className={`hamburger ${openMenu?"open-burger":""}`} onClick={toggleMenu}>
+                <div className={`hamburger ${openMenu?"open-burger":"close-burger"}`} onClick={toggleMenu}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <span className={`menu ${openMenu?".menu-open":""}`}>
+                <span className={`menu ${openMenu?"menu-open":"menu-close"}`}>
                     <Link 
                         to="home" 
                         smooth={true} 

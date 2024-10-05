@@ -54,7 +54,38 @@
         width: fit-content;
         gap: 5px;
         margin: 1em 0 0 1em;
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(0, 0, 0, .0);animation: .5s ease-in-out forwards burger-slide-out;
+        /* animation-delay: .05s; */
+    }
+    
+    .hamburger.open-burger {
+        animation: .5s ease-in-out forwards burger-slide-in;
+        animation-delay: .05s;
+    }
+
+
+
+    @keyframes burger-slide-in {
+        0%{
+            transform: translateX(0);
+        }
+
+        100%{
+            transform: translateX(145px);
+        }
+        
+    }
+
+    @keyframes burger-slide-out {
+        0%{
+            transform: translateX(145px);
+        }
+
+        100%{
+            transform: translateX(0);
+        }
+
+        
     }
 
     .hamburger>div{
@@ -62,6 +93,7 @@
         height: 4px;
         border: none;
         border-radius: 50px;
+        transition: transform .5s ease-in-out, opacity .5s ease-in-out;
     }
 
     .hamburger div:nth-child(1),
@@ -77,7 +109,23 @@
         margin-left: auto;
     }
 
-    .mobile-nav .menu{
+    .hamburger.open-burger div:nth-child(1) {
+        width: 40px;
+        transform: translate3d(0, 9.5px, 0) rotate(45deg);
+    }
+
+    .hamburger.open-burger div:nth-child(3) {
+        width: 40px;
+        transform: translate3d(0, -9.5px, 0) rotate(-45deg);
+    }
+
+    .hamburger.open-burger div:nth-child(2) {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+
+    .mobile-nav .menu {
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -87,15 +135,45 @@
         position: absolute;
         z-index: -1;
         padding-top: 3em;
-        animation: none;
+        visibility: hidden;
+        opacity: 0;
     }
 
-    .mobile-nav .mobile-open {
-        animation: 0.7s ease-in-out menu-slide forwards;
+    .mobile-nav .menu.menu-open {
+        visibility: visible;
+        animation: .5s ease-in-out forwards menu-slide-in;
     }
-    
+
+    .mobile-nav .menu.menu-close {
+        visibility: visible;
+        animation: .5s ease-in-out forwards menu-slide-out;
+    }
+
+        @keyframes menu-slide-in {
+            0%{
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes menu-slide-out {
+            100%{
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            0%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
     .mobile-nav .menu .mobile-link {
-        /* border: 1px solid green; */
         text-align: center;
         padding: 1em;
         font-size: larger;
