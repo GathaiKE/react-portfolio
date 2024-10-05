@@ -1,6 +1,12 @@
 import { Link } from 'react-scroll';
 import './nav.css'
 import { useState } from 'react';
+import homeIcon from '../../assets/icons/home.png'
+import aboutIcon from '../../assets/icons/about.png'
+import testimonialIcon from '../../assets/icons/testimonial.png'
+import projectsIcon from '../../assets/icons/projects.png'
+import contactIcon from '../../assets/icons/contact.png'
+import experienceIcon from '../../assets/icons/experience.png'
 
 const Navigation = () => {
 const [openMenu, setOpenMenu] = useState(false)
@@ -33,6 +39,7 @@ const [openMenu, setOpenMenu] = useState(false)
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
+                        <img src={homeIcon} className='nav-icon' alt='home icon'/> 
                         home</Link>
                     <Link 
                         to="about" 
@@ -40,6 +47,7 @@ const [openMenu, setOpenMenu] = useState(false)
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
+                        <img src={aboutIcon} className='nav-icon' alt='about icon'/> 
                         about</Link>
                     <Link 
                         to="skills" 
@@ -47,13 +55,15 @@ const [openMenu, setOpenMenu] = useState(false)
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
-                        my skills</Link>
+                        <img src={experienceIcon} className='nav-icon' alt='experience icon'/> 
+                        experience</Link>
                     <Link 
                         to="projects" 
                         smooth={true} 
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
+                        <img src={projectsIcon} className='nav-icon' alt='projects icon'/> 
                         projects</Link>
                     <Link 
                         to="testimonials" 
@@ -61,6 +71,7 @@ const [openMenu, setOpenMenu] = useState(false)
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
+                        <img src={testimonialIcon} className='nav-icon' alt='testimonials icon'/> 
                         testimonials</Link>
                     <Link 
                         to="contact" 
@@ -68,6 +79,7 @@ const [openMenu, setOpenMenu] = useState(false)
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
+                        <img src={contactIcon} className='nav-icon' alt='contact icon'/> 
                         contact</Link>
                 </span>
             </nav>
