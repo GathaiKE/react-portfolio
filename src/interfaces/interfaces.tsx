@@ -6,8 +6,8 @@ export interface Skill {
 }
 
 export interface Technology {
-    language:string[],
-    framework:string[],
+    language:string,
+    framework:string,
     icon:string
 }
 
@@ -18,6 +18,7 @@ export interface ProjectImage{
     gradientColor:string
     github:string
     liveAddress:string
+    description:string
     technology:Technology[]
 }
 

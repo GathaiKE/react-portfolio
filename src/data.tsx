@@ -9,6 +9,17 @@ import whatsapp from './assets/logos/whatsapp.png'
 import gmail from './assets/logos/gmail.png'
 import linkedin from './assets/logos/linkedin.png'
 
+// Framework icons
+import figmaIcon from './assets/skills/figma.svg'
+import angularIcon from './assets/skills/angular.svg'
+import reactIcon from './assets/skills/react.svg'
+import nodeIcon from './assets/skills/node.svg'
+import djangoIcon from './assets/skills/django.svg'
+import mongoIcon from './assets/skills/mongodb.svg'
+import mysqlOcon from './assets/skills/mysql.svg'
+import postgresIcon from './assets/skills/postgresql.svg'
+import phpIcon from './assets/skills/php.svg'
+
 
 
 
@@ -21,8 +32,12 @@ import linkedin from './assets/logos/linkedin.png'
             src:staffImg,
             title:"Staff Management System",
             technology:[
-
-            ]
+                {framework:"Angular", icon:angularIcon, language:"Typescript"},
+                {framework:"Figma", icon:figmaIcon, language:""},
+                {framework:"Postgres", icon:postgresIcon, language:"SQL"},
+                {framework:"Django", icon:djangoIcon, language:"Python"}
+            ],
+            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, non."
         },
         {
             id:"2",
@@ -32,8 +47,12 @@ import linkedin from './assets/logos/linkedin.png'
             src:visitorsImg,
             title:"Visitor Traffic Monitoring System",
             technology:[
-
-            ]
+                {framework:"Angular", icon:angularIcon, language:"Typescript"},
+                {framework:"Figma", icon:figmaIcon, language:""},
+                {framework:"Postgres", icon:postgresIcon, language:"SQL"},
+                {framework:"Django", icon:djangoIcon, language:"Python"}
+            ],
+            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, non."
         },
         {
             id:"3",
@@ -43,8 +62,12 @@ import linkedin from './assets/logos/linkedin.png'
             src:zionImg,
             title:"Zion Valley",
             technology:[
-
-            ]
+                {framework:"React", icon:reactIcon, language:"Javascript"},
+                {framework:"Figma", icon:figmaIcon, language:""},
+                {framework:"Mongo DB", icon:mongoIcon, language:"NoSQL"},
+                {framework:"Node", icon:nodeIcon, language:"Typescript"}
+            ],
+            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, non."
         },
         {
             id:"4",
@@ -54,8 +77,11 @@ import linkedin from './assets/logos/linkedin.png'
             src:realersImg,
             title:"Realers Real Estate",
             technology:[
-
-            ]
+                {framework:"PHP", icon:phpIcon, language:"PHP"},
+                {framework:"Figma", icon:figmaIcon, language:""},
+                {framework:"MySQL", icon:mysqlOcon, language:"MySQL"}
+            ],
+            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, non."
         },
     ]
 

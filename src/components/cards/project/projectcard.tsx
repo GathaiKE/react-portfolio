@@ -1,13 +1,27 @@
 import { ProjectProps } from '../../../interfaces/interfaces'
 import './projectcard.css'
+import githubIcon from '../../../assets/logos/github.png'
 
 const ProjectCard:React.FC<ProjectProps>=({image}:ProjectProps)=>{
+
+    const images:JSX.Element[] = image.technology.map(tech=>{
+        return (
+            <div className='project-technologies' key={tech.icon}>
+                <img src={tech.icon} />
+                <small>{tech.framework?tech.framework:tech.language}</small>
+            </div>
+        )
+    })
     return (
         <div className='project-card'>
             <img src={image.src} alt={image.title} className='card-img'/>
-            <div className='project-card-filler'>
+            <div className='project-card-details'>
                 <p>{image.title}</p>
-                <button>See more</button>
+                <div className="tech-container">
+                    {images}
+                </div>
+                <small>{image.description}</small>
+                <button><img src={githubIcon} alt='github'/></button>
             </div>
         </div>
     )
