@@ -78,3 +78,9 @@
     visibility: visible;
     translate: visibility .3s ease-in-out;
 }
+
+@media (max-width:768){
+    .project-card {
+        max-width: 250px;
+    }
+}
