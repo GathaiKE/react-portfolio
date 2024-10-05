@@ -1,46 +1,80 @@
 .project-card {
-    background-color: #F5F5FD;
-    width: 20em;
-    height: 20em;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.card-img {
-    width: 100%;
-    height: 50%;
-    object-fit: cover; 
-}
-
-.project-card-filler {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,1)); 
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    gap: 2em;
-    align-items: center;
-    padding-bottom: 3em;
+    background: rgb(24, 23, 23);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    max-width: 350px;
 }
 
-
-.project-card-filler>button{
-    padding: .75em;
-    width: 10em;
-    border: 1px solid white;
-    background-color: #141414;
+.project-card img{
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.project-card-filler>button:active{
-    background-color: #14141494;
+.project-card-details, .project-card-details>p, .project-card-details>small {
+    background-color: rgba(0, 0, 0, .0);
 }
 
-.project-card-filler>p{
-    color: #ff6c03;
-    background: transparent;
+.project-card-details>small {
+    margin-left: .5em;
+}
+
+.project-card-details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.project-card-details button {
+    border: none;
+    background: rgba(0, 0, 0, .0);
+    padding: 0;
+    width: fit-content;
+}
+
+.tech-container {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    margin-left: 1em;
+    background: rgba(0, 0, 0, .0);
+    gap: 10px;
+}
+
+.project-technologies {
+    width: fit-content;
+    background:  rgba(0, 0, 0, .0);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.project-card-details button img,
+.project-technologies>img {
+    height: 1.5em;
+}
+
+.project-technologies>img {
+    background-color: rgba(0, 0, 0, .0);
+}
+
+.project-technologies>small {
+    background-color: rgba(0, 0, 0,.7);
+    padding: 3px 6px;
+    border-radius: 3px;
+    position: absolute;
+    top: 2em;
+    visibility: hidden;
+}
+
+.project-technologies:hover small {
+    visibility: visible;
+    translate: visibility .3s ease-in-out;
 }
