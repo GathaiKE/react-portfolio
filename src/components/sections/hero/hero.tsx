@@ -2,6 +2,7 @@ import img from '../../../assets/hero.png'
 import linkedin from '../../../assets/logos/linkedin_dark.png'
 import github from '../../../assets/logos/github.png'
 import './hero.css'
+import { Link } from 'react-scroll'
 
 const Hero=()=>{
 
@@ -26,8 +27,8 @@ const Hero=()=>{
                             <img src={linkedin} alt="linkedin logo" onClick={()=>handleClick('https://www.linkedin.com/in/gathai-kariuki-061234228/')}/>
                         </span>
                         <span className='buttons-container'>
-                            <button className='explore-btn'>Explore</button>
-                            <button className='contact-btn'>Contact</button>
+                            <button className='explore-btn'><Link to='about' smooth={true} className='nav-to'>Explore</Link></button>
+                            <button className='contact-btn'><Link to='contact' smooth={true} className='nav-to'>Contact</Link></button>
                         </span>
                     </span>
                 </div>

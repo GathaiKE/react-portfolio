@@ -24,11 +24,11 @@
 
 @media (max-width:768px){
     .about-section{
-        padding: 4em 1em;
+        padding: 1em;
     }
 
     .about-section>p>span{
-        font-size: medium;
+        font-size: .75em;
     }
 }
 

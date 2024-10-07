@@ -1,6 +1,6 @@
 import staffImg from './assets/cintelstaff.png'
 import visitorsImg from './assets/cintelcoreams.png'
-import realersImg from './assets/cintelcoreams.png'
+import realersImg from './assets/realers.png'
 import zionImg from './assets/zionvalley.png'
 import { ProjectImage, Socials, Testimonial } from './interfaces/interfaces'
 import cintelcoreLogo from './assets/cintelcore logo.png'
@@ -26,7 +26,7 @@ import phpIcon from './assets/skills/php.svg'
     const projectImages:ProjectImage[]=[
         {
             id:"1",
-            github:"",
+            github:"https://github.com/GathaiKE/staff_management_system",
             gradientColor:"",
             liveAddress:"",
             src:staffImg,
@@ -37,11 +37,11 @@ import phpIcon from './assets/skills/php.svg'
                 {framework:"Postgres", icon:postgresIcon, language:"SQL"},
                 {framework:"Django", icon:djangoIcon, language:"Python"}
             ],
-            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, non."
+            description:"A multi-platform system that helps automate most of the Human Resource staffing activities."
         },
         {
             id:"2",
-            github:"",
+            github:"https://github.com/GathaiKE/visitor_management_system",
             gradientColor:"",
             liveAddress:"",
             src:visitorsImg,
@@ -52,11 +52,25 @@ import phpIcon from './assets/skills/php.svg'
                 {framework:"Postgres", icon:postgresIcon, language:"SQL"},
                 {framework:"Django", icon:djangoIcon, language:"Python"}
             ],
-            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, non."
+            description:"This is s system that works to collect and track information of people coming in and out via a building's access points."
         },
         {
             id:"3",
-            github:"",
+            github:"https://github.com/GathaiKE/Realers",
+            gradientColor:"",
+            liveAddress:"",
+            src:realersImg,
+            title:"Realers Real Estate",
+            technology:[
+                {framework:"PHP", icon:phpIcon, language:"PHP"},
+                {framework:"Figma", icon:figmaIcon, language:""},
+                {framework:"MySQL", icon:mysqlOcon, language:"MySQL"}
+            ],
+            description:"This is a concept project that is attempts to display an approach at bridging the gap between real estate agencies and tenants."
+        },
+        {
+            id:"4",
+            github:"https://github.com/GathaiKE/Zion-Valley",
             gradientColor:"",
             liveAddress:"",
             src:zionImg,
@@ -67,22 +81,8 @@ import phpIcon from './assets/skills/php.svg'
                 {framework:"Mongo DB", icon:mongoIcon, language:"NoSQL"},
                 {framework:"Node", icon:nodeIcon, language:"Typescript"}
             ],
-            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, non."
-        },
-        {
-            id:"4",
-            github:"",
-            gradientColor:"",
-            liveAddress:"",
-            src:realersImg,
-            title:"Realers Real Estate",
-            technology:[
-                {framework:"PHP", icon:phpIcon, language:"PHP"},
-                {framework:"Figma", icon:figmaIcon, language:""},
-                {framework:"MySQL", icon:mysqlOcon, language:"MySQL"}
-            ],
-            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, non."
-        },
+            description:"This website is a medium for clients to register as members of a charity organization that aims to allow members to reap benefits after donating their land for use as camping sites."
+        }
     ]
 
     const testimonials:Testimonial[]=[

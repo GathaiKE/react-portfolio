@@ -8,18 +8,29 @@ import Testimonials from '../../components/sections/testimonials/testimonials'
 import './home.css'
 
 const Home = ()=>{
-
-    
-
     return (
         <div className='home-container'>
-            <Hero />
-            <About />
-            <Skills />
-            <Experience />
-            <Projects />
-            <Testimonials />
-            <Contact />
+            <section className="section" id='hero'>
+                <Hero />
+            </section>
+            <section className="section" id='about'>
+                <About />
+            </section>
+            <section className="section" id='skills'>
+                <Skills />
+            </section>
+            <section className="section" id='experience'>
+                <Experience />
+            </section>
+            <section className="section" id='projects'>
+                <Projects />
+            </section>
+            <section className="section" id='testimonials'>
+                <Testimonials />
+            </section>
+            <section className="section" id='contact'>
+                <Contact />
+            </section>
         </div>
     )
 }
