@@ -47,7 +47,7 @@
 @media(max-width:767px){
 
     .projects-section{
-        margin: 4em auto;
+        margin: 4em 5px;
     }
 
     .project-cards{
