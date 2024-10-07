@@ -1,16 +1,25 @@
 .projects-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2.75em;
-    margin: 8em 4em;
+    margin: 8em auto;
+}
+
+.projects-section>h2 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.projects-section>small {
+    display: flex;
+    justify-content: center;
 }
 
 .project-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
+    justify-items: center;
+    align-items: center;
 }
 
 .projects-section>small{
@@ -26,7 +35,7 @@
 @media (min-width: 768px) and (max-width:1024px){
 
     .projects-section{
-        /* margin: 8em 2em; */
+        margin: 8em auto;
     }
 
     .project-cards{
@@ -38,7 +47,7 @@
 @media(max-width:767px){
 
     .projects-section{
-        /* margin: 4em 5px; */
+        margin: 4em auto;
     }
 
     .project-cards{
