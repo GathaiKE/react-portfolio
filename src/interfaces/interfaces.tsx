@@ -61,3 +61,14 @@ export interface EmailJsResponse {
     statusText:string
     message:string
 }
+
+export interface RouteError {
+    status: number
+    statusText: string
+    internal: boolean
+    data: string
+    error: {
+        message:string
+        stack:string
+    }
+}

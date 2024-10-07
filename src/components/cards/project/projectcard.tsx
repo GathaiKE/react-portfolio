@@ -12,6 +12,12 @@ const ProjectCard:React.FC<ProjectProps>=({image}:ProjectProps)=>{
             </div>
         )
     })
+
+    const handleClick=()=>{
+        window.open(image.github, '_blank');
+    }
+
+
     return (
         <div className='project-card'>
             <img src={image.src} alt={image.title} className='card-img'/>
@@ -21,7 +27,7 @@ const ProjectCard:React.FC<ProjectProps>=({image}:ProjectProps)=>{
                     {images}
                 </div>
                 <small>{image.description}</small>
-                <button><img src={githubIcon} alt='github'/></button>
+                <button onClick={handleClick}><img src={githubIcon} alt='github'/></button>
             </div>
         </div>
     )

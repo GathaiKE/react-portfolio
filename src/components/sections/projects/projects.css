@@ -1,6 +1,5 @@
 .projects-section {
     gap: 2.75em;
-    margin: 8em auto;
 }
 
 .projects-section>h2 {
@@ -20,6 +19,7 @@
     gap: 1em;
     justify-items: center;
     align-items: center;
+    margin: 2em 0;
 }
 
 .projects-section>small{

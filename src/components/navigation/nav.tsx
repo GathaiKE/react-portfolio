@@ -18,9 +18,9 @@ const [openMenu, setOpenMenu] = useState(false)
     return (
         <>
             <nav className='home-nav' >
-                <Link to="home" smooth={true} className='home-nav--link' activeClass='.home-nav--link-active'>home</Link>
+                <Link to="hero" smooth={true} className='home-nav--link' activeClass='.home-nav--link-active'>home</Link>
                 <Link to="about" smooth={true} className='home-nav--link' activeClass='.home-nav--link-active'>about</Link>
-                <Link to="skills" smooth={true} className='home-nav--link' activeClass='.home-nav--link-active'>my skills</Link>
+                <Link to="experience" smooth={true} className='home-nav--link' activeClass='.home-nav--link-active'>experience</Link>
                 <Link to="projects" smooth={true} className='home-nav--link' activeClass='.home-nav--link-active'>projects</Link>
                 <Link to="testimonials" smooth={true} className='home-nav--link' activeClass='.home-nav--link-active'>testimonials</Link>
                 <Link to="contact" smooth={true} className='home-nav--link' activeClass='.home-nav--link-active'>contact</Link>
@@ -34,7 +34,7 @@ const [openMenu, setOpenMenu] = useState(false)
                 </div>
                 <span className={`menu ${openMenu?"menu-open":"menu-close"}`}>
                     <Link 
-                        to="home" 
+                        to="hero" 
                         smooth={true} 
                         className='mobile-link'
                         activeClass='mobile-link-active'
@@ -50,7 +50,7 @@ const [openMenu, setOpenMenu] = useState(false)
                         <img src={aboutIcon} className='nav-icon' alt='about icon'/> 
                         about</Link>
                     <Link 
-                        to="skills" 
+                        to="experience" 
                         smooth={true} 
                         className='mobile-link'
                         activeClass='mobile-link-active'
