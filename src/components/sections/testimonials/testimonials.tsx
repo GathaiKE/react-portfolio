@@ -17,7 +17,7 @@ const Testimonials: React.FC = () => {
     });
     return (
         <section className="testimonial-section">
-            <h2>Kind Words said to me before</h2>
+            <h2>Kind words said to me.</h2>
             <div className="testimonial-cards slider-container">
                 <Swiper
                     modules={[Pagination]}

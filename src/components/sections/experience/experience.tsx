@@ -8,8 +8,8 @@ const Experience:React.FC=()=>{
             <div className='content-container'>
                 <div className='experience-card'>
                     <h3>Cintelcore Ltd</h3>
-                    <p>January 2024 - Present</p>
-                    <p>Junior Software Developer</p>
+                    <p>January 2024 - August 2024</p>
+                    <p>Software Developer</p>
                 </div>
                 <div className='card-boundary'>
                     <div className='line'></div>

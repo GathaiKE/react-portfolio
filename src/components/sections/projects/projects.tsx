@@ -30,7 +30,7 @@ const Projects:React.FC=()=>{
     })
     return (
         <section className='projects-section'>
-            <h2>Some of my projects</h2>
+            <h2>Some of my contributions</h2>
             <div className='project-cards'>
                 {cards}
             </div>

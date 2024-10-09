@@ -6,10 +6,11 @@
     justify-content: center;
     background: rgba(0, 0, 0, 1);
     padding: 1.5em;
+    gap: 1.5em;
 }
 
 .home-nav .home-nav--link{
-    padding: .5em 1.5em;
+    padding: .5em 0;
     background: rgba(0, 0, 0, 0.0);
 }
 
@@ -18,9 +19,14 @@
     color: #FD8A37;
 }
 
-.home-nav .home-nav--link-active{
+.home-nav--link.home-nav--link-active {
     color: #FD8A37;
     border-bottom: #FD8A37 solid 3px;
+}
+
+.mobile-link.mobile-link-active {
+    color: #FD8A37;
+    border-left: #FD8A37 solid 3px;
 }
 
 .mobile-nav{
