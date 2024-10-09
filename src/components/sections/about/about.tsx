@@ -5,8 +5,8 @@ const About=()=>{
         <section className='about-section'>
             <h2>Who is Brian?</h2>
             <p>
-                <span>In the fast-paced and ever-evolving world of technology, navigating challenges requires expertise and adaptability. As a full-stack software developer with over two years of experience, I specialize in crafting and maintaining high-quality systems designed to streamline and automate business processes. My background includes collaborating closely with development teams to devise effective solutions that drive client satisfaction and deliver results. </span>
-                <span>I’m passionate about leveraging technology to solve real-world problems and am committed to continuously learning and adapting in this dynamic field. Whether you’re looking to enhance your current systems or build new solutions from the ground up, I’m here to guide you through every step of the process.</span>
+                <span>In the rapidly changing technology landscape, overcoming obstacles demands skill and flexibility. With more than two years of experience, I am a skilled full-stack software developer who focuses on creating and managing top-notch systems that are meant to simplify and automate business operations. I have experience working closely with development teams to create successful solutions that enhance client satisfaction and produce outcomes. </span>
+                <span>I have a strong interest in using technology to address practical issues and am dedicated to constantly learning and adjusting in this ever-changing industry. If you want to improve your existing systems or create new solutions, I am available to assist you at every stage of the process.</span>
             </p>
         </section>
     )
