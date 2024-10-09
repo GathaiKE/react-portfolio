@@ -96,11 +96,11 @@
     background-color: #FD8A37;
 }
 
-.explore-btn:active,
+/* .explore-btn:active,
 .contact-btn:active {
     background-color: #FD8A374f;
     color: #FD8A37;
-}
+} */
 
 .hero-img {
     width: 40%;

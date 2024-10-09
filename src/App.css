@@ -5,3 +5,8 @@ button{
     cursor: pointer;
     font-weight: 700;
 }
+
+button:active {
+    background-color: #FD8A374f;
+    color: #FD8A37;
+}

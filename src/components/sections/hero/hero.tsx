@@ -1,6 +1,8 @@
 import img from '../../../assets/hero.png'
 import linkedin from '../../../assets/logos/linkedin_dark.png'
 import github from '../../../assets/logos/github.png'
+import resumeIcon from "../../../assets/icons/resume.svg"
+import resume from "../../../assets/brian_gathai_resume.pdf"
 import './hero.css'
 import { Link } from 'react-scroll'
 
@@ -25,6 +27,8 @@ const Hero=()=>{
                         <span className='pitch-logos'>
                             <img src={github} alt="Github logo" onClick={()=>handleClick('https://github.com/GathaiKE')}/>
                             <img src={linkedin} alt="linkedin logo" onClick={()=>handleClick('https://www.linkedin.com/in/gathai-kariuki-061234228/')}/>
+                            <img src={resumeIcon} alt="linkedin logo" onClick={()=>handleClick(resume)}/>
+                            {/* <img src={resumeIcon} alt="Resume logo" onClick={downloadResume}/> */}
                         </span>
                         <span className='buttons-container'>
                             <button className='explore-btn'><Link to='about' smooth={true} className='nav-to'>Explore</Link></button>
