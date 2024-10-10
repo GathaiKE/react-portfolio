@@ -9,10 +9,10 @@ import contactIcon from '../../assets/icons/contact.png'
 import experienceIcon from '../../assets/icons/experience.png'
 
 const Navigation = () => {
-const [openMenu, setOpenMenu] = useState(false)
+const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
 
     const toggleMenu=()=>{
-        setOpenMenu(val=>!val)
+        setOpenMenu(val=>({onLaunch:false, isOpen:!val.isOpen}))
     }
 
     return (
@@ -27,12 +27,12 @@ const [openMenu, setOpenMenu] = useState(false)
             </nav>
 
             <nav className='mobile-nav'>
-                <div className={`hamburger ${openMenu?"open-burger":"close-burger"}`} onClick={toggleMenu}>
+                <div className={`hamburger ${(openMenu.isOpen)?"open-burger":`${!openMenu.onLaunch?"close-burger":""}`}`} onClick={toggleMenu}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <span className={`menu ${openMenu?"menu-open":"menu-close"}`}>
+                <span className={`menu ${openMenu.isOpen?"menu-open":`${!openMenu.onLaunch?"menu-close":""}`}`}>
                     <Link 
                         to="hero" 
                         smooth={true}
