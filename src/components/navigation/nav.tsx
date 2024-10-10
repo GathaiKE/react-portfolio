@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
 import './nav.css'
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import homeIcon from '../../assets/icons/home.png'
 import aboutIcon from '../../assets/icons/about.png'
 import testimonialIcon from '../../assets/icons/testimonial.png'
@@ -10,10 +10,22 @@ import experienceIcon from '../../assets/icons/experience.png'
 
 const Navigation = () => {
 const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
+const menuRef:React.MutableRefObject<any> = useRef<HTMLDivElement>(null)
 
-    const toggleMenu=()=>{
-        setOpenMenu(val=>({onLaunch:false, isOpen:!val.isOpen}))
+
+useEffect(()=>{
+    const handleChange=(e:MouseEvent)=>{
+        if(openMenu.isOpen && menuRef.current && !menuRef.current.contains(e.target as Node)){
+            setOpenMenu(val=>({onLaunch:false, isOpen:!val.isOpen}))
+        }
     }
+
+    document.addEventListener('mousedown', handleChange)
+
+    return ()=> document.removeEventListener('mousedown', handleChange)
+}, [openMenu.isOpen])
+
+    const toggleMenu=()=> setOpenMenu(val=>({onLaunch:false, isOpen:!val.isOpen}))
 
     return (
         <>
@@ -26,7 +38,7 @@ const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
                 <Link to="contact" smooth={true} spy={true} className='home-nav--link' activeClass='home-nav--link-active'>contact</Link>
             </nav>
 
-            <nav className='mobile-nav'>
+            <nav className='mobile-nav' ref={menuRef}>
                 <div className={`hamburger ${(openMenu.isOpen)?"open-burger":`${!openMenu.onLaunch?"close-burger":""}`}`} onClick={toggleMenu}>
                     <div></div>
                     <div></div>
@@ -37,6 +49,7 @@ const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
                         to="hero" 
                         smooth={true}
                         spy={true}
+                        onClick={toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -46,6 +59,7 @@ const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
                         to="about" 
                         smooth={true} 
                         spy={true}
+                        onClick={toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -55,6 +69,7 @@ const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
                         to="experience" 
                         smooth={true} 
                         spy={true}
+                        onClick={toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -64,6 +79,7 @@ const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
                         to="projects" 
                         smooth={true} 
                         spy={true}
+                        onClick={toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -73,6 +89,7 @@ const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
                         to="testimonials" 
                         smooth={true} 
                         spy={true}
+                        onClick={toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -82,6 +99,7 @@ const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
                         to="contact" 
                         smooth={true} 
                         spy={true}
+                        onClick={toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
