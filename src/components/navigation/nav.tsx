@@ -12,6 +12,36 @@ const Navigation = () => {
 const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
 const menuRef:React.MutableRefObject<any> = useRef<HTMLDivElement>(null)
 
+let touchStart :number = 0
+let touchEnd :number = 0
+
+useEffect(()=>{
+    const handleTouchStart=(e:TouchEvent)=> touchStart = e.changedTouches[0].screenX
+    const handleTouchEnd=(e:TouchEvent)=> {
+        touchStart = e.changedTouches[0].screenX
+        handleTouchAction()
+    }
+
+    const handleTouchAction=()=>{
+        const swipeDistance:number = touchEnd - touchStart
+
+        if(swipeDistance > 50){
+            setOpenMenu({onLaunch:false, isOpen:true})
+        } else if(swipeDistance < -50){
+            setOpenMenu({onLaunch:false, isOpen:false})
+        }
+    }
+
+
+    document.addEventListener('touchstart', handleTouchStart)
+    document.addEventListener('touchend', handleTouchEnd)
+
+    return ()=>{
+        document.removeEventListener('touchstart', handleTouchStart)
+        document.removeEventListener('touchend', handleTouchEnd)
+    }
+},[])
+
 
 useEffect(()=>{
     const handleChange=(e:MouseEvent)=>{

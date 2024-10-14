@@ -19,7 +19,8 @@ export interface ProjectImage{
     github:string
     liveAddress:string
     description:string
-    technology:Technology[]
+    technology:Technology[],
+    current?:boolean
 }
 
 export interface ProjectProps {

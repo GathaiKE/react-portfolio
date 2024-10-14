@@ -82,6 +82,22 @@ import phpIcon from './assets/skills/php.svg'
                 {framework:"Node", icon:nodeIcon, language:"Typescript"}
             ],
             description:"This website is a medium for clients to register as members of a charity organization that aims to allow members to reap benefits after donating their land for use as camping sites."
+        },
+        {
+            id:"5",
+            github:"https://github.com/GathaiKE/Zion-Valley",
+            gradientColor:"",
+            liveAddress:"",
+            src:zionImg,
+            title:"Shujaa Mzalendo",
+            technology:[
+                {framework:"React", icon:reactIcon, language:"Javascript"},
+                {framework:"Figma", icon:figmaIcon, language:""},
+                {framework:"Mongo DB", icon:mongoIcon, language:"NoSQL"},
+                {framework:"Node", icon:nodeIcon, language:"Typescript"}
+            ],
+            description:"This website is a tribute to Kenyans who died on 25th June 2024 while exercising their constitutional rights in the #RejectFinanceBill2024 demonstrations.",
+            current:true
         }
     ]
 
