@@ -19,6 +19,7 @@ import mongoIcon from './assets/skills/mongodb.svg'
 import mysqlOcon from './assets/skills/mysql.svg'
 import postgresIcon from './assets/skills/postgresql.svg'
 import phpIcon from './assets/skills/php.svg'
+import firebaseIcon from './assets/skills/firebase.svg'
 
 
 
@@ -85,16 +86,15 @@ import phpIcon from './assets/skills/php.svg'
         },
         {
             id:"5",
-            github:"https://github.com/GathaiKE/Zion-Valley",
+            github:"https://github.com/GathaiKE/shujaa_mzalendo",
             gradientColor:"",
             liveAddress:"",
             src:zionImg,
             title:"Shujaa Mzalendo",
             technology:[
-                {framework:"React", icon:reactIcon, language:"Javascript"},
                 {framework:"Figma", icon:figmaIcon, language:""},
-                {framework:"Mongo DB", icon:mongoIcon, language:"NoSQL"},
-                {framework:"Node", icon:nodeIcon, language:"Typescript"}
+                {framework:"React", icon:reactIcon, language:"Javascript"},
+                {framework:"Firebase", icon:firebaseIcon, language:""}
             ],
             description:"This website is a tribute to Kenyans who died on 25th June 2024 while exercising their constitutional rights in the #RejectFinanceBill2024 demonstrations.",
             current:true
