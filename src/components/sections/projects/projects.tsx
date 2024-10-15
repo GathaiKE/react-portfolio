@@ -12,10 +12,15 @@ const Projects:React.FC=()=>{
     const [showAllProjects, setShowAllProjects] = useState<boolean>(false)
 
     useEffect(()=>{
+        const sortedProjects: ProjectImage[] = projectImages.slice()
+        const currentIndex: number = sortedProjects.findIndex(project => project.current)
+        const currentProject:ProjectImage = sortedProjects[currentIndex]
+        sortedProjects.splice(currentIndex, 1)
+        sortedProjects.unshift(currentProject)
         if(showAllProjects){
-            setImages(projectImages)
+            setImages(sortedProjects)
         } else {
-            setImages(projectImages.slice(0, 3))
+            setImages(sortedProjects.slice(0, 3))
         }
     }, [showAllProjects])
 
@@ -23,11 +28,9 @@ const Projects:React.FC=()=>{
         setShowAllProjects(prev=>!prev)
     }
 
-
-
-    const cards: JSX.Element[] = images.map(image=>{
-        return <ProjectCard key={image.id} image={image}/>
-    })
+    const cards:JSX.Element[] = images.map(image=>{
+            return <ProjectCard key={image?.id} image={image}/>
+        })
     return (
         <section className='projects-section'>
             <h2>Some of my contributions</h2>

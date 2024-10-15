@@ -20,6 +20,7 @@ const ProjectCard:React.FC<ProjectProps>=({image}:ProjectProps)=>{
 
     return (
         <div className='project-card'>
+            {image.current && <div className="current-banner">Coming soon</div>}
             <img src={image.src} alt={image.title} className='card-img'/>
             <div className='project-card-details'>
                 <p>{image.title}</p>
