@@ -7,6 +7,7 @@
     overflow: hidden;
     padding: 10px;
     max-width: 350px;
+    position: relative;
 }
 
 .project-card img{
@@ -77,6 +78,17 @@
 .project-technologies:hover small {
     visibility: visible;
     translate: visibility .3s ease-in-out;
+}
+
+.current-banner {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fd8937d5;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: smaller;
+    font-weight: 400;
 }
 
 @media (max-width:768px){
