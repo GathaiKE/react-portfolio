@@ -35,8 +35,8 @@ import firebaseIcon from './assets/skills/firebase.svg'
             technology:[
                 {framework:"Angular", icon:angularIcon, language:"Typescript"},
                 {framework:"Figma", icon:figmaIcon, language:""},
-                {framework:"Postgres", icon:postgresIcon, language:"SQL"},
-                {framework:"Django", icon:djangoIcon, language:"Python"}
+                {framework:"Django", icon:djangoIcon, language:"Python"},
+                {framework:"Postgres", icon:postgresIcon, language:"SQL"}
             ],
             description:"A multi-platform system that helps automate most of the Human Resource staffing activities."
         },
@@ -50,8 +50,8 @@ import firebaseIcon from './assets/skills/firebase.svg'
             technology:[
                 {framework:"Angular", icon:angularIcon, language:"Typescript"},
                 {framework:"Figma", icon:figmaIcon, language:""},
-                {framework:"Postgres", icon:postgresIcon, language:"SQL"},
-                {framework:"Django", icon:djangoIcon, language:"Python"}
+                {framework:"Django", icon:djangoIcon, language:"Python"},
+                {framework:"Postgres", icon:postgresIcon, language:"SQL"}
             ],
             description:"This is s system that works to collect and track information of people coming in and out via a building's access points."
         },
@@ -79,8 +79,8 @@ import firebaseIcon from './assets/skills/firebase.svg'
             technology:[
                 {framework:"React", icon:reactIcon, language:"Javascript"},
                 {framework:"Figma", icon:figmaIcon, language:""},
-                {framework:"Mongo DB", icon:mongoIcon, language:"NoSQL"},
-                {framework:"Node", icon:nodeIcon, language:"Typescript"}
+                {framework:"Node", icon:nodeIcon, language:"Typescript"},
+                {framework:"Mongo DB", icon:mongoIcon, language:"NoSQL"}
             ],
             description:"This website is a medium for clients to register as members of a charity organization that aims to allow members to reap benefits after donating their land for use as camping sites."
         },

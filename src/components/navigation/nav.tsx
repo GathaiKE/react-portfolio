@@ -10,34 +10,30 @@ import experienceIcon from '../../assets/icons/experience.png'
 
 const Navigation = () => {
 const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
-const menuRef:React.MutableRefObject<any> = useRef<HTMLDivElement>(null)
+const menuRef:React.MutableRefObject<HTMLDivElement | null> = useRef<HTMLDivElement>(null)
 
-let touchStart :number = 0
-let touchEnd :number = 0
+const touchStart: React.MutableRefObject<number>  = useRef(0)
+const touchEnd: React.MutableRefObject<number> = useRef(0)
+
+const handleTouchStart=(e:TouchEvent)=> touchStart.current = e.changedTouches[0].screenX
+const handleTouchEnd=()=> {
+    if(touchStart.current - touchEnd.current > 50){
+        setOpenMenu({onLaunch:false, isOpen:false})
+    } else if(touchEnd.current - touchStart.current > 50){
+        setOpenMenu({onLaunch:false, isOpen:true})
+    }
+}
+
+const handleTouchMove=(e:TouchEvent)=> touchEnd.current = e.changedTouches[0].screenX
 
 useEffect(()=>{
-    const handleTouchStart=(e:TouchEvent)=> touchStart = e.changedTouches[0].screenX
-    const handleTouchEnd=(e:TouchEvent)=> {
-        touchStart = e.changedTouches[0].screenX
-        handleTouchAction()
-    }
-
-    const handleTouchAction=()=>{
-        const swipeDistance:number = touchEnd - touchStart
-
-        if(swipeDistance > 50){
-            setOpenMenu({onLaunch:false, isOpen:true})
-        } else if(swipeDistance < -50){
-            setOpenMenu({onLaunch:false, isOpen:false})
-        }
-    }
-
-
     document.addEventListener('touchstart', handleTouchStart)
+    document.addEventListener('touchmove', handleTouchMove)
     document.addEventListener('touchend', handleTouchEnd)
 
     return ()=>{
         document.removeEventListener('touchstart', handleTouchStart)
+        document.removeEventListener('touchmove', handleTouchMove)
         document.removeEventListener('touchend', handleTouchEnd)
     }
 },[])
@@ -55,7 +51,10 @@ useEffect(()=>{
     return ()=> document.removeEventListener('mousedown', handleChange)
 }, [openMenu.isOpen])
 
-    const toggleMenu=()=> setOpenMenu(val=>({onLaunch:false, isOpen:!val.isOpen}))
+    const toggleMenu=(e: React.MouseEvent<HTMLDivElement, MouseEvent>)=> {
+        e.preventDefault();
+        setOpenMenu(val=>({onLaunch:false, isOpen:!val.isOpen}))
+    }
 
     return (
         <>
@@ -79,7 +78,7 @@ useEffect(()=>{
                         to="hero" 
                         smooth={true}
                         spy={true}
-                        onClick={toggleMenu}
+                        onClick={()=>toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -89,7 +88,7 @@ useEffect(()=>{
                         to="about" 
                         smooth={true} 
                         spy={true}
-                        onClick={toggleMenu}
+                        onClick={()=>toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -99,7 +98,7 @@ useEffect(()=>{
                         to="experience" 
                         smooth={true} 
                         spy={true}
-                        onClick={toggleMenu}
+                        onClick={()=>toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -109,7 +108,7 @@ useEffect(()=>{
                         to="projects" 
                         smooth={true} 
                         spy={true}
-                        onClick={toggleMenu}
+                        onClick={()=>toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -119,7 +118,7 @@ useEffect(()=>{
                         to="testimonials" 
                         smooth={true} 
                         spy={true}
-                        onClick={toggleMenu}
+                        onClick={()=>toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >
@@ -129,7 +128,7 @@ useEffect(()=>{
                         to="contact" 
                         smooth={true} 
                         spy={true}
-                        onClick={toggleMenu}
+                        onClick={()=>toggleMenu}
                         className='mobile-link'
                         activeClass='mobile-link-active'
                     >

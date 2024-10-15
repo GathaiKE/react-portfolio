@@ -29,13 +29,16 @@ const Projects:React.FC=()=>{
     }
 
     const cards:JSX.Element[] = images.map(image=>{
-            return <ProjectCard key={image?.id} image={image}/>
+            return <ProjectCard key={image.id} image={image}/>
         })
+
     return (
         <section className='projects-section'>
             <h2>Some of my contributions</h2>
             <div className='project-cards'>
+
                 {cards}
+
             </div>
             <small onClick={handleShowProjects}>{showAllProjects?"View less":"View more"}</small>
         </section>
