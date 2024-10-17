@@ -10,34 +10,7 @@ import experienceIcon from '../../assets/icons/experience.png'
 
 const Navigation = () => {
 const [openMenu, setOpenMenu] = useState({isOpen:false, onLaunch:true})
-const menuRef:React.MutableRefObject<HTMLDivElement | null> = useRef<HTMLDivElement>(null)
-
-const touchStart: React.MutableRefObject<number>  = useRef(0)
-const touchEnd: React.MutableRefObject<number> = useRef(0)
-
-const handleTouchStart=(e:TouchEvent)=> touchStart.current = e.changedTouches[0].screenX
-const handleTouchEnd=()=> {
-    if(touchStart.current - touchEnd.current > 50){
-        setOpenMenu({onLaunch:false, isOpen:false})
-    } else if(touchEnd.current - touchStart.current > 50){
-        setOpenMenu({onLaunch:false, isOpen:true})
-    }
-}
-
-const handleTouchMove=(e:TouchEvent)=> touchEnd.current = e.changedTouches[0].screenX
-
-useEffect(()=>{
-    document.addEventListener('touchstart', handleTouchStart)
-    document.addEventListener('touchmove', handleTouchMove)
-    document.addEventListener('touchend', handleTouchEnd)
-
-    return ()=>{
-        document.removeEventListener('touchstart', handleTouchStart)
-        document.removeEventListener('touchmove', handleTouchMove)
-        document.removeEventListener('touchend', handleTouchEnd)
-    }
-},[])
-
+const menuRef:React.MutableRefObject<any> = useRef<HTMLDivElement>(null)
 
 useEffect(()=>{
     const handleChange=(e:MouseEvent)=>{
