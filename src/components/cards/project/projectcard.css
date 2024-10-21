@@ -13,6 +13,7 @@
 .project-card img{
     object-fit: cover;
     border-radius: 10px;
+    height: 200px;
 }
 
 .project-card-details, .project-card-details>p, .project-card-details>small {

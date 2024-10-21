@@ -4,6 +4,7 @@ import realersImg from './assets/realers.png'
 import zionImg from './assets/zionvalley.png'
 import { ProjectImage, Socials, Testimonial } from './interfaces/interfaces'
 import cintelcoreLogo from './assets/cintelcore logo.png'
+import shujaa_mzalendoImg from './assets/shujaa_mzalendo.jpeg'
 import jituLogo from './assets/the-jitu.png'
 import whatsapp from './assets/logos/whatsapp.png'
 import gmail from './assets/logos/gmail.png'
@@ -89,7 +90,7 @@ import firebaseIcon from './assets/skills/firebase.svg'
             github:"https://github.com/GathaiKE/shujaa_mzalendo",
             gradientColor:"",
             liveAddress:"",
-            src:zionImg,
+            src:shujaa_mzalendoImg,
             title:"Shujaa Mzalendo",
             technology:[
                 {framework:"Figma", icon:figmaIcon, language:""},
