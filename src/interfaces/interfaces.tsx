@@ -73,3 +73,11 @@ export interface RouteError {
         stack:string
     }
 }
+
+export interface ExperiencePost {
+    id: string
+    company:string
+    startDate:  string
+    endDate:  string
+    title: string
+}
