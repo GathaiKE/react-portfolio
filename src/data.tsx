@@ -104,7 +104,7 @@ import firebaseIcon from './assets/skills/firebase.svg'
             github:"",
             gradientColor:"",
             liveAddress:"",
-            src:shujaa_mzalendoImg,
+            src:'',
             title:"Africode Solutions",
             technology:[
                 {framework:"Figma", icon:figmaIcon, language:""},
