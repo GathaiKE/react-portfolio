@@ -97,7 +97,21 @@ import firebaseIcon from './assets/skills/firebase.svg'
                 {framework:"React", icon:reactIcon, language:"Javascript"},
                 {framework:"Firebase", icon:firebaseIcon, language:""}
             ],
-            description:"This website is a tribute to Kenyans who died on 25th June 2024 while exercising their constitutional rights in the #RejectFinanceBill2024 demonstrations.",
+            description:"This website is a tribute to Kenyans who died on 25th June 2024 while exercising their constitutional rights in the #RejectFinanceBill2024 demonstrations."
+        },
+        {
+            id:"6",
+            github:"",
+            gradientColor:"",
+            liveAddress:"",
+            src:shujaa_mzalendoImg,
+            title:"Africode Solutions",
+            technology:[
+                {framework:"Figma", icon:figmaIcon, language:""},
+                {framework:"React", icon:reactIcon, language:"Javascript"},
+                {framework:"Firebase", icon:firebaseIcon, language:""}
+            ],
+            description:"This is the home web page of a software development agency operating from Nairobi Kenya. Its purpose to give the agency an online prescence and list the products that they offer.",
             current:true
         }
     ]
