@@ -9,6 +9,7 @@ import jituLogo from './assets/the-jitu.png'
 import whatsapp from './assets/logos/whatsapp.png'
 import gmail from './assets/logos/gmail.png'
 import linkedin from './assets/logos/linkedin.png'
+import AfricodeSolutionsLogo from './assets/africode_logo.svg'
 
 // Framework icons
 import figmaIcon from './assets/skills/figma.svg'
@@ -85,33 +86,33 @@ const projectImages: ProjectImage[] = [
         ],
         description: "This website is a medium for clients to register as members of a charity organization that aims to allow members to reap benefits after donating their land for use as camping sites."
     },
-    {
-        id: "5",
-        github: "https://github.com/GathaiKE/shujaa_mzalendo",
-        gradientColor: "",
-        liveAddress: "",
-        src: shujaa_mzalendoImg,
-        title: "Shujaa Mzalendo",
-        technology: [
-            { framework: "Figma", icon: figmaIcon, language: "" },
-            { framework: "React", icon: reactIcon, language: "Javascript" },
-            { framework: "Firebase", icon: firebaseIcon, language: "" }
-        ],
-        description: "This website is a tribute to Kenyans who died on 25th June 2024 while exercising their constitutional rights in the #RejectFinanceBill2024 demonstrations."
-    },
+    // {
+    //     id: "5",
+    //     github: "https://github.com/GathaiKE/shujaa_mzalendo",
+    //     gradientColor: "",
+    //     liveAddress: "",
+    //     src: shujaa_mzalendoImg,
+    //     title: "Shujaa Mzalendo",
+    //     technology: [
+    //         { framework: "Figma", icon: figmaIcon, language: "" },
+    //         { framework: "React", icon: reactIcon, language: "Javascript" },
+    //         { framework: "Firebase", icon: firebaseIcon, language: "" }
+    //     ],
+    //     description: "This website is a tribute to Kenyans who died on 25th June 2024 while exercising their constitutional rights in the #RejectFinanceBill2024 demonstrations."
+    // },
     {
         id: "6",
         github: "",
         gradientColor: "",
         liveAddress: "",
-        src: '',
+        src: AfricodeSolutionsLogo,
         title: "Africode Solutions",
         technology: [
             { framework: "Figma", icon: figmaIcon, language: "" },
             { framework: "React", icon: reactIcon, language: "Javascript" },
             { framework: "Firebase", icon: firebaseIcon, language: "" }
         ],
-        description: "This is the home web page of a software development agency operating from Nairobi Kenya. Its purpose to give the agency an online prescence and list the products that they offer.",
+        description: "This is the home web page of a software development agency operating from Nairobi Kenya to give the agency an online prescence and list the products that they offer.",
         current: true
     }
 ]
