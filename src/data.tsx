@@ -121,7 +121,7 @@ const projectImages: ProjectImage[] = [
         gradientColor: "",
         liveAddress: "",
         src: "",
-        title: "Healthcare scheduling system",
+        title: "Healthcare Appointment Scheduling System",
         technology: [
             { framework: "Django", icon: djangoIcon, language: "python" },
             { framework: "Postgres", icon: postgresIcon, language: "sql" },
