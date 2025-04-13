@@ -112,8 +112,8 @@ const projectImages: ProjectImage[] = [
             { framework: "React", icon: reactIcon, language: "Javascript" },
             { framework: "Firebase", icon: firebaseIcon, language: "" }
         ],
-        description: "This is the home web page of a software development agency operating from Nairobi Kenya to give the agency an online prescence and list the products that they offer.",
-        current: true
+        description: "This is the home web page of a software development agency.",
+        // current: true
     },
     {
         id: "7",
@@ -121,7 +121,7 @@ const projectImages: ProjectImage[] = [
         gradientColor: "",
         liveAddress: "",
         src: "",
-        title: "Healthcare Appointment Scheduling System",
+        title: "Healthcare Appointment Scheduling",
         technology: [
             { framework: "Django", icon: djangoIcon, language: "python" },
             { framework: "Postgres", icon: postgresIcon, language: "sql" },
