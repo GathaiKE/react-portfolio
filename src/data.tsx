@@ -22,7 +22,7 @@ import mysqlOcon from './assets/skills/mysql.svg'
 import postgresIcon from './assets/skills/postgresql.svg'
 import phpIcon from './assets/skills/php.svg'
 import firebaseIcon from './assets/skills/firebase.svg'
-
+import rabbitMQ from './assets/skills/rabbitmq.svg'
 
 
 
@@ -102,7 +102,7 @@ const projectImages: ProjectImage[] = [
     // },
     {
         id: "6",
-        github: "",
+        github: "https://github.com/GathaiKE/Healthcare-Appointment-Scheduling-System",
         gradientColor: "",
         liveAddress: "",
         src: AfricodeSolutionsLogo,
@@ -113,6 +113,21 @@ const projectImages: ProjectImage[] = [
             { framework: "Firebase", icon: firebaseIcon, language: "" }
         ],
         description: "This is the home web page of a software development agency operating from Nairobi Kenya to give the agency an online prescence and list the products that they offer.",
+        current: true
+    },
+    {
+        id: "7",
+        github: "https://github.com/GathaiKE/Healthcare-Appointment-Scheduling-System",
+        gradientColor: "",
+        liveAddress: "",
+        src: "",
+        title: "Healthcare scheduling system",
+        technology: [
+            { framework: "Django", icon: djangoIcon, language: "python" },
+            { framework: "Postgres", icon: postgresIcon, language: "sql" },
+            { framework: "RabbitMQ", icon: rabbitMQ, language: "" }
+        ],
+        description: "A high performance booking api system that sets and tracks appointments between doctors and patients with the relevant medical records.",
         current: true
     }
 ]
