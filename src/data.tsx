@@ -84,7 +84,7 @@ const projectImages: ProjectImage[] = [
             { framework: "Node", icon: nodeIcon, language: "Typescript" },
             { framework: "Mongo DB", icon: mongoIcon, language: "NoSQL" }
         ],
-        description: "This website is a medium for clients to register as members of a charity organization that aims to allow members to reap benefits after donating their land for use as camping sites."
+        description: "This website is a medium for clients to register as members of a charity land renting organization."
     },
     // {
     //     id: "5",
@@ -102,7 +102,7 @@ const projectImages: ProjectImage[] = [
     // },
     {
         id: "6",
-        github: "https://github.com/GathaiKE/Healthcare-Appointment-Scheduling-System",
+        github: "",
         gradientColor: "",
         liveAddress: "",
         src: AfricodeSolutionsLogo,
