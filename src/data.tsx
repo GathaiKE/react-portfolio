@@ -180,8 +180,8 @@ const formerRoles: ExperiencePost[] = [
     {
         id: "2",
         company: "Cintelcore Ltd",
-        startDate: "January 2024",
-        endDate: "August 2024",
+        startDate: "September 2023",
+        endDate: "September 2024",
         title: "Software Developer"
     },
     {
